@@ -16,7 +16,9 @@ public class LandingPage {
 	
 	By signin = By.cssSelector("a[href *= 'sign_in']");
 	By title = By.cssSelector(".text-center>h2");
-	By navbar = By.cssSelector("ul.nav.navbar-nav.navbar-right");
+	By navbar = By.cssSelector("ul.nav.navbar-nav.navbar-right>li>a");
+	By popUp = By.cssSelector("div.sumome-react-wysiwyg-component.sumome-react-wysiwyg-popup-background.sumome-react-wysiwyg-background");
+	By popupCancel = By.xpath("//button[text() ='NO THANKS']");
 	
 	public WebElement getsignIn() {
 		return driver.findElement(signin);
@@ -26,6 +28,12 @@ public class LandingPage {
 	}
 	public WebElement getNavBar() {
 		return driver.findElement(navbar);
+	}
+	public WebElement getPopUp() {
+		return driver.findElement(popUp);
+	}
+	public WebElement getPopCancel() {
+		return driver.findElement(popupCancel);
 	}
 	
 

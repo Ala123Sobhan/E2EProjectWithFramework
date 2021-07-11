@@ -14,10 +14,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class base {
 
 	public WebDriver driver;
-
+    public Properties prop;
+    
 	public WebDriver initializeDriver() throws IOException {
 
-		Properties prop = new Properties();
+	    prop = new Properties();
 		FileInputStream fis = new FileInputStream(
 				"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
@@ -38,7 +39,7 @@ public class base {
 			driver = new InternetExplorerDriver();
 		}
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		return driver;
