@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" parallel="none">
   <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="Academy.HomePage">
+      <class name="Academy.LandingPageVerify">
         <methods>
-          <include name="verifyPageNavigation"/>
+          <include name="verifyNavBarDisplay"/>
         </methods>
-      </class> <!-- Academy.HomePage -->
+      </class> <!-- Academy.LandingPageVerify -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

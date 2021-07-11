@@ -2,6 +2,7 @@ package Academy;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -28,6 +29,9 @@ public class HomePage extends base {
 	
 	@DataProvider
 	public Object[][] getData() {
+		
+		//row - how many times test shd run with diff data types;
+		//col - how many value each test got
 		Object [][] data = new Object[2][3];
 		data[0][0] = "nonres@qw.com";
 		data[0][1] = "1233!";
@@ -39,4 +43,7 @@ public class HomePage extends base {
 		
 		return data;
 	}
+	
+	
+	
 }

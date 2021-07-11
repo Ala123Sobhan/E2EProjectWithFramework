@@ -1,55 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21538" started-at="2021-07-11T13:59:59Z" finished-at="2021-07-11T14:00:21Z">
+  <suite name="Default suite" duration-ms="8711" started-at="2021-07-11T14:26:46Z" finished-at="2021-07-11T14:26:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21538" started-at="2021-07-11T13:59:59Z" finished-at="2021-07-11T14:00:21Z">
-      <class name="Academy.HomePage">
-        <test-method status="PASS" signature="verifyPageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@229d10bd]" name="verifyPageNavigation" duration-ms="10776" started-at="2021-07-11T09:59:59Z" data-provider="getData" finished-at="2021-07-11T10:00:10Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonres@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1233!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[non restricted]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="8711" started-at="2021-07-11T14:26:46Z" finished-at="2021-07-11T14:26:54Z">
+      <class name="Academy.LandingPageVerify">
+        <test-method status="PASS" signature="verifyNavBarDisplay()[pri:0, instance:Academy.LandingPageVerify@61dd025]" name="verifyNavBarDisplay" duration-ms="8677" started-at="2021-07-11T10:26:46Z" finished-at="2021-07-11T10:26:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyPageNavigation -->
-        <test-method status="PASS" signature="verifyPageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@229d10bd]" name="verifyPageNavigation" duration-ms="10723" started-at="2021-07-11T10:00:10Z" data-provider="getData" finished-at="2021-07-11T10:00:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[res@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[restricted]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageNavigation -->
-      </class> <!-- Academy.HomePage -->
+        </test-method> <!-- verifyNavBarDisplay -->
+      </class> <!-- Academy.LandingPageVerify -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

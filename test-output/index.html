@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\ala12\AppData\Local\Temp\testng-eclipse-97827071\testng-customsuite.xml</span>
+                    <span>C:\Users\ala12\AppData\Local\Temp\testng-eclipse-750644142\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +101,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Academy.HomePage" hash-for-method="verifyPageNavigation(res@qw.com, 1234!, restricted)">verifyPageNavigation(res@qw.com, 1234!, restricted)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Academy.HomePage" hash-for-method="verifyPageNavigation(nonres@qw.com, 1233!, non restricted)">verifyPageNavigation(nonres@qw.com, 1233!, non restricted)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Academy.LandingPageVerify" hash-for-method="verifyNavBarDisplay">verifyNavBarDisplay</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -124,23 +119,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Academy.HomePage</span>
+              <span class="class-name">Academy.LandingPageVerify</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyPageNavigation(res@qw.com, 1234!, restricted)">
-                  </a> <!-- verifyPageNavigation(res@qw.com, 1234!, restricted) -->
-                  <span class="method-name">verifyPageNavigation</span>
-                  <span class="parameters">(res@qw.com, 1234!, restricted)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPageNavigation(nonres@qw.com, 1233!, non restricted)">
-                  </a> <!-- verifyPageNavigation(nonres@qw.com, 1233!, non restricted) -->
-                  <span class="method-name">verifyPageNavigation</span>
-                  <span class="parameters">(nonres@qw.com, 1233!, non restricted)</span>
+                  <a name="verifyNavBarDisplay">
+                  </a> <!-- verifyNavBarDisplay -->
+                  <span class="method-name">verifyNavBarDisplay</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -148,7 +134,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ala12\AppData\Local\Temp\testng-eclipse-97827071\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ala12\AppData\Local\Temp\testng-eclipse-750644142\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -157,7 +143,11 @@
 &lt;suite name=&quot;Default suite&quot; parallel=&quot;none&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Academy.HomePage&quot;/&gt;
+      &lt;class name=&quot;Academy.LandingPageVerify&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifyNavBarDisplay&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Academy.LandingPageVerify --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -197,20 +187,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPageNavigation')
-data.setCell(0, 2, 'Academy.HomePage')
-data.setCell(0, 3, 10776);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyPageNavigation')
-data.setCell(1, 2, 'Academy.HomePage')
-data.setCell(1, 3, 10723);
+data.setCell(0, 1, 'verifyNavBarDisplay')
+data.setCell(0, 2, 'Academy.LandingPageVerify')
+data.setCell(0, 3, 8677);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -225,9 +211,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Academy.LandingPageVerify</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyPageTitle</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -236,14 +229,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.HomePage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Academy.LandingPageVerify</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyPageNavigation(nonres@qw.com, 1233!, non restricted)</span>
+                <span class="method-name">verifyNavBarDisplay</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyPageNavigation(res@qw.com, 1234!, restricted)</span>
-                <span class="method-start">10779 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

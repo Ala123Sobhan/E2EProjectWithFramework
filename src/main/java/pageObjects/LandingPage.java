@@ -15,9 +15,17 @@ public class LandingPage {
 	
 	
 	By signin = By.cssSelector("a[href *= 'sign_in']");
+	By title = By.cssSelector(".text-center>h2");
+	By navbar = By.cssSelector("ul.nav.navbar-nav.navbar-right");
 	
 	public WebElement getsignIn() {
 		return driver.findElement(signin);
+	}
+	public WebElement getTitle() {
+		return driver.findElement(title);
+	}
+	public WebElement getNavBar() {
+		return driver.findElement(navbar);
 	}
 	
 
