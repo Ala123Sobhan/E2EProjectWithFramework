@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10414" started-at="2021-07-11T13:43:00Z" finished-at="2021-07-11T13:43:11Z">
+  <suite name="Default suite" duration-ms="21538" started-at="2021-07-11T13:59:59Z" finished-at="2021-07-11T14:00:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10414" started-at="2021-07-11T13:43:00Z" finished-at="2021-07-11T13:43:11Z">
+    <test name="Default test" duration-ms="21538" started-at="2021-07-11T13:59:59Z" finished-at="2021-07-11T14:00:21Z">
       <class name="Academy.HomePage">
-        <test-method status="PASS" signature="verifyPageNavigation()[pri:0, instance:Academy.HomePage@29176cc1]" name="verifyPageNavigation" duration-ms="10386" started-at="2021-07-11T09:43:00Z" finished-at="2021-07-11T09:43:11Z">
+        <test-method status="PASS" signature="verifyPageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@229d10bd]" name="verifyPageNavigation" duration-ms="10776" started-at="2021-07-11T09:59:59Z" data-provider="getData" finished-at="2021-07-11T10:00:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonres@qw.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1233!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[non restricted]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageNavigation -->
+        <test-method status="PASS" signature="verifyPageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@229d10bd]" name="verifyPageNavigation" duration-ms="10723" started-at="2021-07-11T10:00:10Z" data-provider="getData" finished-at="2021-07-11T10:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[res@qw.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[restricted]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageNavigation -->
