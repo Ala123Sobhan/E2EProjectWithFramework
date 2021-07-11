@@ -2,6 +2,8 @@ package Academy;
 
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,9 +16,12 @@ import resources.base;
 
 public class HomePage extends base {
 	
+	public static Logger log = LogManager.getLogger(HomePage.class.getName());
+	
 	@BeforeTest
 	public void initilizeDriver() throws IOException {
 		driver = initializeDriver();
+		log.info("Driver is initialized");
 		
 	}
 	
@@ -26,11 +31,13 @@ public class HomePage extends base {
 		driver.get(prop.getProperty("url"));
 		LandingPage l = new LandingPage(driver);
 		l.getsignIn().click();
+		log.info("Navigated to the Sign In page");
 		
 		LoginPage lp = new LoginPage(driver);
 		lp.getEmail().sendKeys(uname);
 		lp.getPass().sendKeys(pass);
-		System.out.println(status);
+		//System.out.println(status);
+		log.info("User Status: "+status);
 		lp.getLogin().click();
 	}
 
@@ -55,6 +62,8 @@ public class HomePage extends base {
 	@AfterTest
 	public void tearDown() {
 		driver.close();
+		log.info("Tearing down");
+		
 	}
 	
 	

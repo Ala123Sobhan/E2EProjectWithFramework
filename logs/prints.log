@@ -1,0 +1,5 @@
+19:07:29.097 [main] INFO  Academy.HomePage - Navigated to the Sign In page
+19:07:29.340 [main] INFO  Academy.HomePage - User Status: non restricted
+19:07:32.627 [main] INFO  Academy.HomePage - Navigated to the Sign In page
+19:07:32.895 [main] INFO  Academy.HomePage - User Status: restricted
+19:07:33.702 [main] INFO  Academy.HomePage - Tearing down
