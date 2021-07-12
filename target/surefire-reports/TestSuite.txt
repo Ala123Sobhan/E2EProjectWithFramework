@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 35.903 s - in TestSuite
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 30.737 s <<< FAILURE! - in TestSuite
+Academy.LandingPageVerify.verifyAppTitle  Time elapsed: 0.621 s  <<< FAILURE!
+java.lang.AssertionError: expected [FEATURED23 COURSES] but found [FEATURED COURSES]
+	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:26)
+

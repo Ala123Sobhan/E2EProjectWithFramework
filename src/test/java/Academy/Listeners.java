@@ -18,15 +18,17 @@ public class Listeners extends base implements ITestListener{
 
 	ExtentReports extent = ExtentReporterNG.getReportObject();
 	ExtentTest test;
+	ThreadLocal <ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
+	
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getMethod().getMethodName());
-		
+		extentTest.set(test);
 	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		test.log(Status.PASS, "Test Passed");
+		extentTest.get().log(Status.PASS, "Test Passed");
 		
 	}
 
@@ -34,7 +36,7 @@ public class Listeners extends base implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		
 		
-		test.fail(result.getThrowable());
+		extentTest.get().fail(result.getThrowable());
 		
 		String testcaseName = result.getMethod().getMethodName();
 		WebDriver driver = null;

@@ -1,8 +1,7 @@
-09:44:39.180 [main] INFO  Academy.HomePage - User Status: restricted
-09:44:40.082 [main] INFO  Academy.HomePage - Tearing down
-09:49:51.382 [main] INFO  Academy.HomePage - Driver is initialized
-09:49:57.220 [main] INFO  Academy.HomePage - Navigated to the Sign In page
-09:49:57.471 [main] INFO  Academy.HomePage - User Status: non restricted
-09:50:00.361 [main] INFO  Academy.HomePage - Navigated to the Sign In page
-09:50:00.617 [main] INFO  Academy.HomePage - User Status: restricted
-09:50:01.336 [main] INFO  Academy.HomePage - Tearing down
+10:05:29.776 [TestNG] INFO  Academy.HomePage - User Status: non restricted
+10:05:37.293 [TestNG] INFO  Academy.HomePage - Navigated to the Sign In page
+10:05:37.558 [TestNG] INFO  Academy.HomePage - User Status: restricted
+10:05:38.242 [TestNG] INFO  Academy.HomePage - Tearing down
+10:08:46.362 [TestNG] INFO  Academy.HomePage - Driver is initialized
+10:08:57.979 [TestNG] INFO  Academy.HomePage - Navigated to the Sign In page
+10:08:58.686 [TestNG] INFO  Academy.HomePage - User Status: non restricted
