@@ -2,6 +2,7 @@ package Academy;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -11,7 +12,7 @@ import pageObjects.LandingPage;
 import resources.base;
 
 public class LandingPageVerify extends base {
-	
+	WebDriver driver;
 	@BeforeTest
 	public void initilizeDriver() throws IOException {
 		driver = initializeDriver();

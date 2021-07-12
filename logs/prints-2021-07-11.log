@@ -1,8 +1,8 @@
-19:05:04.586 [main] INFO  Academy.HomePage - Driver is initialized
-19:05:16.092 [main] INFO  Academy.HomePage - Navigated to the Sign In page
-19:05:16.436 [main] INFO  Academy.HomePage - User Status: non restricted
-19:05:20.189 [main] INFO  Academy.HomePage - Navigated to the Sign In page
-19:05:20.454 [main] INFO  Academy.HomePage - User Status: restricted
-19:05:21.487 [main] INFO  Academy.HomePage - Tearing down
-19:05:21.488 [main] ERROR Academy.HomePage - hoi na ken?
-19:07:21.868 [main] INFO  Academy.HomePage - Driver is initialized
+20:22:28.418 [main] INFO  Academy.HomePage - Navigated to the Sign In page
+20:22:28.949 [main] INFO  Academy.HomePage - User Status: restricted
+20:22:29.759 [main] INFO  Academy.HomePage - Tearing down
+20:23:59.512 [main] INFO  Academy.HomePage - Driver is initialized
+20:24:04.920 [main] INFO  Academy.HomePage - Navigated to the Sign In page
+20:24:05.165 [main] INFO  Academy.HomePage - User Status: non restricted
+20:24:08.085 [main] INFO  Academy.HomePage - Navigated to the Sign In page
+20:24:08.544 [main] INFO  Academy.HomePage - User Status: restricted
