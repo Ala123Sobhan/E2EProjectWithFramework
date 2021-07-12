@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25620" started-at="2021-07-12T14:08:42Z" finished-at="2021-07-12T14:09:07Z">
+  <suite name="Suite" duration-ms="17949" started-at="2021-07-12T14:22:46Z" finished-at="2021-07-12T14:23:04Z">
     <groups>
     </groups>
-    <test name="App Test" duration-ms="11" started-at="2021-07-12T14:08:42Z" finished-at="2021-07-12T14:08:42Z">
+    <test name="App Test" duration-ms="5" started-at="2021-07-12T14:22:46Z" finished-at="2021-07-12T14:22:46Z">
     </test> <!-- App Test -->
-    <test name="Verifying navbar links display" duration-ms="14568" started-at="2021-07-12T14:08:42Z" finished-at="2021-07-12T14:08:56Z">
+    <test name="Verifying navbar links display" duration-ms="12068" started-at="2021-07-12T14:22:46Z" finished-at="2021-07-12T14:22:58Z">
       <class name="Academy.VerifyNavBar">
-        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.VerifyNavBar@147a5d08]" name="initilizeDriver" is-config="true" duration-ms="12627" started-at="2021-07-12T10:08:42Z" finished-at="2021-07-12T10:08:54Z">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.VerifyNavBar@7cbd9d24]" name="initilizeDriver" is-config="true" duration-ms="10910" started-at="2021-07-12T10:22:46Z" finished-at="2021-07-12T10:22:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeDriver -->
-        <test-method status="PASS" signature="verifyNavBarDisplay()[pri:0, instance:Academy.VerifyNavBar@147a5d08]" name="verifyNavBarDisplay" duration-ms="334" started-at="2021-07-12T10:08:54Z" finished-at="2021-07-12T10:08:55Z">
+        <test-method status="PASS" signature="verifyNavBarDisplay()[pri:0, instance:Academy.VerifyNavBar@7cbd9d24]" name="verifyNavBarDisplay" duration-ms="413" started-at="2021-07-12T10:22:57Z" finished-at="2021-07-12T10:22:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNavBarDisplay -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.VerifyNavBar@147a5d08]" name="tearDown" is-config="true" duration-ms="1581" started-at="2021-07-12T10:08:55Z" finished-at="2021-07-12T10:08:56Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.VerifyNavBar@7cbd9d24]" name="tearDown" is-config="true" duration-ms="728" started-at="2021-07-12T10:22:57Z" finished-at="2021-07-12T10:22:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Academy.VerifyNavBar -->
     </test> <!-- Verifying navbar links display -->
-    <test name="Verifying page title" duration-ms="17041" started-at="2021-07-12T14:08:42Z" finished-at="2021-07-12T14:08:59Z">
+    <test name="Verifying page title" duration-ms="13564" started-at="2021-07-12T14:22:46Z" finished-at="2021-07-12T14:22:59Z">
       <class name="Academy.LandingPageVerify">
-        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.LandingPageVerify@8f4ea7c]" name="initilizeDriver" is-config="true" duration-ms="13012" started-at="2021-07-12T10:08:42Z" finished-at="2021-07-12T10:08:55Z">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.LandingPageVerify@8f4ea7c]" name="initilizeDriver" is-config="true" duration-ms="11765" started-at="2021-07-12T10:22:46Z" finished-at="2021-07-12T10:22:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeDriver -->
-        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@8f4ea7c]" name="verifyAppTitle" duration-ms="199" started-at="2021-07-12T10:08:55Z" finished-at="2021-07-12T10:08:55Z">
+        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@8f4ea7c]" name="verifyAppTitle" duration-ms="85" started-at="2021-07-12T10:22:58Z" finished-at="2021-07-12T10:22:58Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [FEATURED23 COURSES] but found [FEATURED COURSES]]]>
@@ -68,19 +68,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAppTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@8f4ea7c]" name="tearDown" is-config="true" duration-ms="1416" started-at="2021-07-12T10:08:57Z" finished-at="2021-07-12T10:08:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@8f4ea7c]" name="tearDown" is-config="true" duration-ms="366" started-at="2021-07-12T10:22:59Z" finished-at="2021-07-12T10:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Academy.LandingPageVerify -->
     </test> <!-- Verifying page title -->
-    <test name="Verifying Login" duration-ms="25620" started-at="2021-07-12T14:08:42Z" finished-at="2021-07-12T14:09:07Z">
+    <test name="Verifying Login" duration-ms="17949" started-at="2021-07-12T14:22:46Z" finished-at="2021-07-12T14:23:04Z">
       <class name="Academy.HomePage">
-        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.HomePage@727eb8cb]" name="initilizeDriver" is-config="true" duration-ms="4250" started-at="2021-07-12T10:08:42Z" finished-at="2021-07-12T10:08:46Z">
+        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.HomePage@b978d10]" name="initilizeDriver" is-config="true" duration-ms="3689" started-at="2021-07-12T10:22:46Z" finished-at="2021-07-12T10:22:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeDriver -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@727eb8cb]" name="verifyLogin" duration-ms="13418" started-at="2021-07-12T10:08:46Z" data-provider="getData" finished-at="2021-07-12T10:08:59Z">
+        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@b978d10]" name="verifyLogin" duration-ms="10548" started-at="2021-07-12T10:22:50Z" data-provider="getData" finished-at="2021-07-12T10:23:00Z">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@727eb8cb]" name="verifyLogin" duration-ms="6748" started-at="2021-07-12T10:08:59Z" data-provider="getData" finished-at="2021-07-12T10:09:06Z">
+        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@b978d10]" name="verifyLogin" duration-ms="3440" started-at="2021-07-12T10:23:00Z" data-provider="getData" finished-at="2021-07-12T10:23:04Z">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.HomePage@727eb8cb]" name="tearDown" is-config="true" duration-ms="1182" started-at="2021-07-12T10:09:06Z" finished-at="2021-07-12T10:09:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.HomePage@b978d10]" name="tearDown" is-config="true" duration-ms="252" started-at="2021-07-12T10:23:04Z" finished-at="2021-07-12T10:23:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
