@@ -20,10 +20,10 @@ public class LandingPageVerify extends base {
 	}
 	
 	@Test
-	public void verifyPageTitle() throws IOException {
+	public void verifyAppTitle() throws IOException {
 		
 		LandingPage l = new LandingPage(driver);
-		Assert.assertEquals(l.getTitle().getText(), "FEATURED COURSES");
+		Assert.assertEquals(l.getTitle().getText(), "FEATURED23 COURSES");
 		
 	}
 	@AfterTest

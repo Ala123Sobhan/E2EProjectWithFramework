@@ -1,0 +1,8 @@
+09:44:39.180 [main] INFO  Academy.HomePage - User Status: restricted
+09:44:40.082 [main] INFO  Academy.HomePage - Tearing down
+09:49:51.382 [main] INFO  Academy.HomePage - Driver is initialized
+09:49:57.220 [main] INFO  Academy.HomePage - Navigated to the Sign In page
+09:49:57.471 [main] INFO  Academy.HomePage - User Status: non restricted
+09:50:00.361 [main] INFO  Academy.HomePage - Navigated to the Sign In page
+09:50:00.617 [main] INFO  Academy.HomePage - User Status: restricted
+09:50:01.336 [main] INFO  Academy.HomePage - Tearing down

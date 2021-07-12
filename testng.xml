@@ -1,25 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel = "tests">
+<suite name="Suite" >
+	<listeners>
+		<listener class-name="Academy.Listeners" />
+	</listeners>
 	<test thread-count="5" name="Verifying page title">
 		<classes>
 			<class name="Academy.LandingPageVerify" />
 		</classes>
 	</test>
 
-	<test name = "App Test">
+	<test name="App Test">
 		<classes>
 			<class name="Academy.AppTest" />
 		</classes>
 	</test>
 
-	<test name = "Verifying Login">
+	<test name="Verifying Login">
 		<classes>
 			<class name="Academy.HomePage" />
 		</classes>
 	</test>
 
-	<test name= "Verifying navbar links display">
+	<test name="Verifying navbar links display">
 		<classes>
 			<class name="Academy.VerifyNavBar" />
 		</classes>
