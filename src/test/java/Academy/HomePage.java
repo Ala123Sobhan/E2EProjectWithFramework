@@ -11,6 +11,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
+
+import pageObjects.ForgotPassword;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import resources.base;
@@ -41,6 +44,15 @@ public class HomePage extends base {
 		//System.out.println(status);
 		log.info("User Status: "+status);
 		lp.getLogin().click();
+		
+		lp.getForgotPassLink().click();
+		ForgotPassword fp = new ForgotPassword(driver);
+		Faker faker = new Faker();
+		String username = faker.name().firstName();
+		String email = username + "@qw.com";
+	
+		fp.getEmail().sendKeys(email);
+		fp.getSendMebtn().click();
 	}
 
 	

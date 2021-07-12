@@ -5,8 +5,8 @@
     <classes>
       <class name="Academy.HomePage">
         <methods>
+          <include name="verifyLogin" invocation-numbers="0 1"/>
           <include name="initilizeDriver"/>
-          <include name="verifyPageNavigation" invocation-numbers="1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Academy.HomePage -->

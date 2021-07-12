@@ -15,7 +15,12 @@ public class LoginPage {
 	By email = By.id("user_email");
 	By pass = By.id("user_password");
 	By login = By.cssSelector("input[value = 'Log In']");
+	By forgotPass = By.cssSelector("a[href *= 'password/new']");
 	
+	
+	public WebElement getForgotPassLink() {
+		return driver.findElement(forgotPass);
+	}
 	public WebElement getEmail() {
 		return driver.findElement(email);
 	}

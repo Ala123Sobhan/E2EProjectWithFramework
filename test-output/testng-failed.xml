@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="tests">
-  <listeners>
-    <listener class-name="Academy.Listeners"/>
-  </listeners>
-  <test name="Verifying page title(failed)" parallel="tests">
+<suite name="Failed suite [Default suite]" parallel="none">
+  <test name="Default test(failed)" parallel="none">
     <classes>
       <class name="Academy.HomePage">
         <methods>
+          <include name="verifyLogin" invocation-numbers="0 1"/>
           <include name="initilizeDriver"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Academy.HomePage -->
-      <class name="Academy.LandingPageVerify">
-        <methods>
-          <include name="initilizeDriver"/>
-          <include name="verifyAppTitle"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Academy.LandingPageVerify -->
-      <class name="Academy.VerifyNavBar">
-        <methods>
-          <include name="tearDown"/>
-          <include name="initilizeDriver"/>
-        </methods>
-      </class> <!-- Academy.VerifyNavBar -->
     </classes>
-  </test> <!-- Verifying page title(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
