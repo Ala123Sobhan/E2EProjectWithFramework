@@ -4,8 +4,38 @@
   <listeners>
     <listener class-name="Academy.Listeners"/>
   </listeners>
+  <test name="Verifying navbar links display(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.LandingPageVerify">
+        <methods>
+          <include name="initilizeDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Academy.LandingPageVerify -->
+      <class name="Academy.VerifyNavBar">
+        <methods>
+          <include name="verifyNavBarDisplay"/>
+          <include name="tearDown"/>
+          <include name="initilizeDriver"/>
+        </methods>
+      </class> <!-- Academy.VerifyNavBar -->
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="initilizeDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
+    </classes>
+  </test> <!-- Verifying navbar links display(failed) -->
   <test name="Verifying page title(failed)" parallel="tests">
     <classes>
+      <class name="Academy.LandingPageVerify">
+        <methods>
+          <include name="initilizeDriver"/>
+          <include name="verifyAppTitle"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Academy.LandingPageVerify -->
       <class name="Academy.VerifyNavBar">
         <methods>
           <include name="tearDown"/>
@@ -18,13 +48,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Academy.HomePage -->
-      <class name="Academy.LandingPageVerify">
-        <methods>
-          <include name="initilizeDriver"/>
-          <include name="verifyAppTitle"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Academy.LandingPageVerify -->
     </classes>
   </test> <!-- Verifying page title(failed) -->
 </suite> <!-- Failed suite [Suite] -->

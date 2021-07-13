@@ -27,17 +27,20 @@ public class base {
 				"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 		//System.out.println(prop.getProperty("browser"));
-
-		if (prop.getProperty("browser").equals("chrome")) {
+		
+        // String browserName = prop.getProperty("browser");
+         String browserName = System.getProperty("browser");
+         
+		if (browserName.equals("chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
-		} else if (prop.getProperty("browser").equals("firefox")) {
+		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",
 					"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
-		} else if (prop.getProperty("browser").equals("IE")) {
+		} else if (browserName.equals("IE")) {
 			System.setProperty("webdriver.ie.driver",
 					"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\driver\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
