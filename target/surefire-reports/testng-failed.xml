@@ -13,18 +13,18 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Academy.LandingPageVerify -->
-      <class name="Academy.HomePage">
-        <methods>
-          <include name="initilizeDriver"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Academy.HomePage -->
       <class name="Academy.VerifyNavBar">
         <methods>
           <include name="tearDown"/>
           <include name="initilizeDriver"/>
         </methods>
       </class> <!-- Academy.VerifyNavBar -->
+      <class name="Academy.HomePage">
+        <methods>
+          <include name="initilizeDriver"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Academy.HomePage -->
     </classes>
   </test> <!-- Verifying page title(failed) -->
   <test name="Verifying navbar links display(failed)" parallel="tests">
@@ -58,6 +58,12 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Academy.LandingPageVerify -->
+      <class name="Academy.VerifyNavBar">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initilizeDriver"/>
+        </methods>
+      </class> <!-- Academy.VerifyNavBar -->
       <class name="Academy.HomePage">
         <methods>
           <include name="verifyLogin" invocation-numbers="0 1"/>
@@ -65,12 +71,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- Academy.HomePage -->
-      <class name="Academy.VerifyNavBar">
-        <methods>
-          <include name="tearDown"/>
-          <include name="initilizeDriver"/>
-        </methods>
-      </class> <!-- Academy.VerifyNavBar -->
     </classes>
   </test> <!-- Verifying Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

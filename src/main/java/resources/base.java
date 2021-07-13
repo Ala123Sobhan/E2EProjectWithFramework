@@ -12,6 +12,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -30,10 +31,13 @@ public class base {
         // String browserName = prop.getProperty("browser");
          String browserName = System.getProperty("browser");
          
-		if (browserName.equals("chrome")) {
+		if (browserName.contains("chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
-			driver = new ChromeDriver();
+			
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("--headless");
+			driver = new ChromeDriver(option);
 		} else if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
