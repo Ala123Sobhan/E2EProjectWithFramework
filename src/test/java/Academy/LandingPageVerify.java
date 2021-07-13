@@ -26,6 +26,15 @@ public class LandingPageVerify extends base {
 		Assert.assertEquals(l.getTitle().getText(), "FEATURED23 COURSES");
 		
 	}
+	
+	@Test
+	public void verifyHeader() {
+		/*
+		 * 
+		 * dummy
+		 * */
+		Assert.assertEquals(false, false);
+	}
 	@AfterTest
 	public void tearDown() {
 		driver.close();

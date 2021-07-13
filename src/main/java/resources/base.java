@@ -19,30 +19,33 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class base {
 
 	public WebDriver driver;
-    public Properties prop;
-    
+	public Properties prop;
+
 	public WebDriver initializeDriver() throws IOException {
 
-	    prop = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
-		//System.out.println(prop.getProperty("browser"));
-		
-        // String browserName = prop.getProperty("browser");
-         String browserName = System.getProperty("browser");
-         
+		// System.out.println(prop.getProperty("browser"));
+
+		 String browserName = prop.getProperty("browser");
+		//String browserName = System.getProperty("browser");
+
 		if (browserName.contains("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
-			
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
 			ChromeOptions option = new ChromeOptions();
-			option.addArguments("--headless");
+			if (browserName.contains("headless")) {
+				option.addArguments("--headless");
+			}
 			driver = new ChromeDriver(option);
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browserName.equals("IE")) {
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\driver\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\driver\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 
@@ -52,11 +55,11 @@ public class base {
 		return driver;
 
 	}
-	
+
 	public String getScreenshot(String testcaseName, WebDriver driver) throws IOException {
-		TakesScreenshot ts = (TakesScreenshot)driver;
+		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		String destFile = System.getProperty("user.dir")+ "\\reports\\"+testcaseName+".png";
+		String destFile = System.getProperty("user.dir") + "\\reports\\" + testcaseName + ".png";
 		FileUtils.copyFile(src, new File(destFile));
 		return destFile;
 	}
