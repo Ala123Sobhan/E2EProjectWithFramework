@@ -23,8 +23,7 @@ public class base {
 	public WebDriver initializeDriver() throws IOException {
 
 	    prop = new Properties();
-		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\data.properties");
 		prop.load(fis);
 		//System.out.println(prop.getProperty("browser"));
 		
@@ -33,16 +32,13 @@ public class base {
          
 		if (browserName.equals("chrome")) {
 
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"\\driver\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browserName.equals("IE")) {
-			System.setProperty("webdriver.ie.driver",
-					"C:\\Users\\ala12\\eclipse-workspace\\E2EProject\\driver\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\driver\\IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 
