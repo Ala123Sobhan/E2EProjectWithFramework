@@ -8,3 +8,18 @@ ERROR StatusLogger No log4j2 configuration file found.
  Set system property 'org.apache.logging.log4j.simplelog.StatusLogger.level' 
 to TRACE to show Log4j2 internal initialization logging.
 ----------------->set root level to TRACE
+
+src/main/java
+resource package-
+base - driver initialization, screenshot, utility methods
+extentReporter - extent reporter object
+log4j - logging stuff
+
+page objects package-
+page objects and their getters
+
+src/test/java
+beforetest(driver initialization using extend base class), testcases, aftertest (tear down- browser (driver) close)
+Listener - implements ITestListener, handles report using extent test and thread local and captures screenshot and add that to report
+               (onteststart, ontestfailure, ontestfinish, ontestsuccess)
+

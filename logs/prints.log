@@ -1,7 +1,4 @@
-09:55:33.402 [TestNG] INFO  Academy.HomePage - Tearing down
-09:59:31.338 [TestNG] INFO  Academy.HomePage - Driver is initialized
-09:59:59.549 [TestNG] INFO  Academy.HomePage - Tearing down
-10:08:43.849 [TestNG] INFO  Academy.HomePage - Driver is initialized
-10:09:12.402 [TestNG] INFO  Academy.HomePage - Tearing down
-10:38:22.085 [TestNG] INFO  Academy.HomePage - Driver is initialized
-10:38:49.224 [TestNG] INFO  Academy.HomePage - Tearing down
+09:20:10.350 [TestNG] INFO  Academy.HomePage - User Status: non restricted
+09:20:15.234 [TestNG] INFO  Academy.HomePage - Navigated to the Sign In page
+09:20:15.474 [TestNG] INFO  Academy.HomePage - User Status: restricted
+09:20:17.810 [TestNG] INFO  Academy.HomePage - Tearing down
