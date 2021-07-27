@@ -59,7 +59,8 @@ public class base {
 
 	}
 
-	public String getScreenshot(String testcaseName, WebDriver driver) throws IOException {
+	public String [] getScreenshot(String testcaseName, WebDriver driver) throws IOException {
+		String [] paths = new String[2];
 		String dT = getCurrentTime();
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
@@ -68,10 +69,12 @@ public class base {
 		String destFile = System.getProperty("user.dir") + "\\reports\\" +testcaseName+".png" ;
 		FileUtils.copyFile(src, new File(destFile));
 	
+		paths[0]= destFile;
 		String jenkinsPath = "http://localhost:8080/job/E2E_Maven/ws/reports/"+testcaseName+".png";
 		//return destFile;
 		System.out.println(jenkinsPath);
-		return jenkinsPath;
+		paths[1] = jenkinsPath;
+		return paths;
 	}
 	
 	public String getCurrentTime() {
