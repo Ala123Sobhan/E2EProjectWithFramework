@@ -32,8 +32,8 @@ public class base {
 		prop.load(fis);
 		// System.out.println(prop.getProperty("browser"));
 
-		 //String browserName = prop.getProperty("browser");
-		String browserName = System.getProperty("browser");
+		 String browserName = prop.getProperty("browser");
+		//String browserName = System.getProperty("browser");
 
 		if (browserName.contains("chrome")) {
 
@@ -60,12 +60,15 @@ public class base {
 	}
 
 	public String getScreenshot(String testcaseName, WebDriver driver) throws IOException {
+		String dT = getCurrentTime();
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		String destFile = System.getProperty("user.dir") + "\\reports\\" + testcaseName + ".png";
+		
+		String fxt = testcaseName +"_"+dT+".png";
+		String destFile = System.getProperty("user.dir") + "\\reports\\" +testcaseName+".png" ;
 		FileUtils.copyFile(src, new File(destFile));
-		String dT = getCurrentTime();
-		String jenkinsPath = "http://localhost:8080/job/E2E_Maven/ws/reports/"+ testcaseName+"_"+dT+".png";
+	
+		String jenkinsPath = "http://localhost:8080/job/E2E_Maven/ws/reports/"+testcaseName+".png";
 		//return destFile;
 		System.out.println(jenkinsPath);
 		return jenkinsPath;
