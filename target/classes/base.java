@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -62,10 +65,18 @@ public class base {
 		String destFile = System.getProperty("user.dir") + "\\reports\\" + testcaseName + ".png";
 		FileUtils.copyFile(src, new File(destFile));
 		
-		String jenkinsPath = "http://localhost:8080/job/E2E_Maven/ws/reports/"+ testcaseName+".png";
+		String jenkinsPath = "http://localhost:8080/job/E2E_Maven/ws/reports/"+ testcaseName+"_"+getCurrentTime()+".png";
 		//return destFile;
 		return jenkinsPath;
 	}
 	
+	public String getCurrentTime() {
+		
+		
+		   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		   LocalDateTime now = LocalDateTime.now();  
+		   return dtf.format(now);  
+		
+	}
 
 }
