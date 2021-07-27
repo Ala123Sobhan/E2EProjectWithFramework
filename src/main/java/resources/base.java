@@ -64,9 +64,10 @@ public class base {
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		String destFile = System.getProperty("user.dir") + "\\reports\\" + testcaseName + ".png";
 		FileUtils.copyFile(src, new File(destFile));
-		
-		String jenkinsPath = "http://localhost:8080/job/E2E_Maven/ws/reports/"+ testcaseName+"_"+getCurrentTime()+".png";
+		String dT = getCurrentTime();
+		String jenkinsPath = "http://localhost:8080/job/E2E_Maven/ws/reports/"+ testcaseName+"_"+dT+".png";
 		//return destFile;
+		System.out.println(jenkinsPath);
 		return jenkinsPath;
 	}
 	
