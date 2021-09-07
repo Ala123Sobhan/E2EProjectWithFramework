@@ -1,1 +1,5 @@
-12:42:01.559 [TestNG] INFO  Academy.HomePage - Tearing down
+10:23:11.533 [TestNG] INFO  Academy.HomePage - Navigated to the Sign In page
+10:23:12.334 [TestNG] INFO  Academy.HomePage - User Status: non restricted
+10:23:18.068 [TestNG] INFO  Academy.HomePage - Navigated to the Sign In page
+10:23:18.410 [TestNG] INFO  Academy.HomePage - User Status: restricted
+10:23:21.665 [TestNG] INFO  Academy.HomePage - Tearing down
