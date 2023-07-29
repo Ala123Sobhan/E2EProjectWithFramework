@@ -1,8 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 42.766 s <<< FAILURE! - in TestSuite
-Academy.LandingPageVerify.verifyAppTitle  Time elapsed: 0.289 s  <<< FAILURE!
-java.lang.AssertionError: expected [FEATURED23 COURSES] but found [FEATURED COURSES]
-	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:26)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.182 s <<< FAILURE! - in TestSuite
+Academy.LandingPageVerify.verifyAppTitle  Time elapsed: 1.293 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a href="https://www.udemy.com/user/testing-minds/" class="main-btn">...</a> is not clickable at point (1142, 124). Other element would receive the click: <div class="preloader">...</div>
+  (Session info: headless chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3MLRAML', ip: '10.0.0.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d59f7a118c11191f6226fe6721b0e8d
+	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:32)
 

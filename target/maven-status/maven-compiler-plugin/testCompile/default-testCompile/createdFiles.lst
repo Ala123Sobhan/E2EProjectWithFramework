@@ -1,5 +1,7 @@
-Academy\AppTest.class
 Academy\LandingPageVerify.class
-Academy\VerifyNavBar.class
 Academy\HomePage.class
 Academy\Listeners.class
+Academy\DatabaseDrivenTest.class
+Academy\AppTest.class
+Academy\VerifyNavBar.class
+Academy\FileUpload_Download_Verification.class

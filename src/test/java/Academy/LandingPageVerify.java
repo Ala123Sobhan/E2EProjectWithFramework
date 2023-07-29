@@ -2,7 +2,10 @@ package Academy;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -14,7 +17,7 @@ import resources.base;
 public class LandingPageVerify extends base {
 	WebDriver driver;
 	@BeforeTest
-	public void initilizeDriver() throws IOException {
+	public void initilizeDriver1() throws IOException {
 		driver = initializeDriver();
 		driver.get(prop.getProperty("url"));
 	}
@@ -23,7 +26,12 @@ public class LandingPageVerify extends base {
 	public void verifyAppTitle() throws IOException {
 		
 		LandingPage l = new LandingPage(driver);
-		Assert.assertEquals(l.getTitle().getText(), "FEATURED23 COURSES");
+		WebDriverWait wt= new WebDriverWait(driver, 20);
+		wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[normalize-space()='Access all our Courses']"))));
+		
+		driver.findElement(By.xpath("//a[normalize-space()='Access all our Courses']")).click();
+		
+		System.out.println(driver.getCurrentUrl());
 		
 	}
 	

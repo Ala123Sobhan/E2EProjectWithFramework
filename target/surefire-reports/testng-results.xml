@@ -1,47 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="5" passed="4">
+<testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="38252" started-at="2021-08-23T14:22:43Z" finished-at="2021-08-23T14:23:21Z">
+  <suite name="Suite" duration-ms="5692" started-at="2023-07-29T22:56:29Z" finished-at="2023-07-29T22:56:35Z">
     <groups>
     </groups>
-    <test name="App Test" duration-ms="15" started-at="2021-08-23T14:22:43Z" finished-at="2021-08-23T14:22:43Z">
+    <test name="App Test" duration-ms="5" started-at="2023-07-29T22:56:29Z" finished-at="2023-07-29T22:56:29Z">
     </test> <!-- App Test -->
-    <test name="Verifying navbar links display" duration-ms="26587" started-at="2021-08-23T14:22:43Z" finished-at="2021-08-23T14:23:10Z">
-      <class name="Academy.VerifyNavBar">
-        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.VerifyNavBar@50f6ac94]" name="initilizeDriver" is-config="true" duration-ms="24585" started-at="2021-08-23T10:22:43Z" finished-at="2021-08-23T10:23:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilizeDriver -->
-        <test-method status="PASS" signature="verifyNavBarDisplay()[pri:0, instance:Academy.VerifyNavBar@50f6ac94]" name="verifyNavBarDisplay" duration-ms="367" started-at="2021-08-23T10:23:08Z" finished-at="2021-08-23T10:23:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyNavBarDisplay -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.VerifyNavBar@50f6ac94]" name="tearDown" is-config="true" duration-ms="1627" started-at="2021-08-23T10:23:08Z" finished-at="2021-08-23T10:23:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Academy.VerifyNavBar -->
-    </test> <!-- Verifying navbar links display -->
-    <test name="Verifying page title" duration-ms="29115" started-at="2021-08-23T14:22:43Z" finished-at="2021-08-23T14:23:12Z">
+    <test name="Verifying page title" duration-ms="5692" started-at="2023-07-29T22:56:29Z" finished-at="2023-07-29T22:56:35Z">
       <class name="Academy.LandingPageVerify">
-        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.LandingPageVerify@222545dc]" name="initilizeDriver" is-config="true" duration-ms="24527" started-at="2021-08-23T10:22:43Z" finished-at="2021-08-23T10:23:07Z">
+        <test-method status="PASS" signature="initilizeDriver1()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="initilizeDriver1" is-config="true" duration-ms="4127" started-at="2023-07-29T17:56:29Z" finished-at="2023-07-29T17:56:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initilizeDriver -->
-        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@222545dc]" name="verifyAppTitle" duration-ms="328" started-at="2021-08-23T10:23:07Z" finished-at="2021-08-23T10:23:08Z">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- initilizeDriver1 -->
+        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="verifyAppTitle" duration-ms="1324" started-at="2023-07-29T17:56:33Z" finished-at="2023-07-29T17:56:35Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[expected [FEATURED23 COURSES] but found [FEATURED COURSES]]]>
+              <![CDATA[element click intercepted: Element <a href="https://www.udemy.com/user/testing-minds/" class="main-btn">...</a> is not clickable at point (1142, 124). Other element would receive the click: <div class="preloader">...</div>
+  (Session info: headless chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3MLRAML', ip: '10.0.0.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d59f7a118c11191f6226fe6721b0e8d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [FEATURED23 COURSES] but found [FEATURED COURSES]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertEquals(Assert.java:123)
-	at org.testng.Assert.assertEquals(Assert.java:176)
-	at org.testng.Assert.assertEquals(Assert.java:186)
-	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:26)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://www.udemy.com/user/testing-minds/" class="main-btn">...</a> is not clickable at point (1142, 124). Other element would receive the click: <div class="preloader">...</div>
+  (Session info: headless chrome=114.0.5735.248)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-3MLRAML', ip: '10.0.0.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d59f7a118c11191f6226fe6721b0e8d
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:32)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -64,73 +67,19 @@
 	at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAppTitle -->
-        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:Academy.LandingPageVerify@222545dc]" name="verifyHeader" duration-ms="1" started-at="2021-08-23T10:23:11Z" finished-at="2021-08-23T10:23:11Z">
+        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="verifyHeader" duration-ms="3" started-at="2023-07-29T17:56:35Z" finished-at="2023-07-29T17:56:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeader -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@222545dc]" name="tearDown" is-config="true" duration-ms="575" started-at="2021-08-23T10:23:11Z" finished-at="2021-08-23T10:23:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="tearDown" is-config="true" duration-ms="47" started-at="2023-07-29T17:56:35Z" finished-at="2023-07-29T17:56:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Academy.LandingPageVerify -->
     </test> <!-- Verifying page title -->
-    <test name="Verifying Login" duration-ms="38250" started-at="2021-08-23T14:22:43Z" finished-at="2021-08-23T14:23:21Z">
-      <class name="Academy.HomePage">
-        <test-method status="PASS" signature="initilizeDriver()[pri:0, instance:Academy.HomePage@24105dc5]" name="initilizeDriver" is-config="true" duration-ms="12460" started-at="2021-08-23T10:22:43Z" finished-at="2021-08-23T10:22:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initilizeDriver -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@24105dc5]" name="verifyLogin" duration-ms="19157" started-at="2021-08-23T10:22:55Z" data-provider="getData" finished-at="2021-08-23T10:23:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonres@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1233!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[non restricted]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="verifyLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Academy.HomePage@24105dc5]" name="verifyLogin" duration-ms="6318" started-at="2021-08-23T10:23:15Z" data-provider="getData" finished-at="2021-08-23T10:23:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[res@qw.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234!]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[restricted]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.HomePage@24105dc5]" name="tearDown" is-config="true" duration-ms="269" started-at="2021-08-23T10:23:21Z" finished-at="2021-08-23T10:23:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Academy.HomePage -->
-    </test> <!-- Verifying Login -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -32,59 +32,44 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
 <tr><td style="text-align:left;padding-right:2em">App Test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Verifying navbar links display</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">26.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr><td style="text-align:left;padding-right:2em">Verifying page title</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">29.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">Verifying Login</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">38.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">Verifying page title</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">5.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">38.3 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">5.7 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Verifying navbar links display &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">Academy.VerifyNavBar</td><td><a href="#m1"><b>verifyNavBarDisplay</b>  </a></td><td class="numi">1</td><td>1629728588004</td><td class="numi">367</td></tr>
 <tr><th colspan="4">Verifying page title &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">Academy.LandingPageVerify</td><td><a href="#m2"><b>verifyAppTitle</b>  </a></td><td class="numi">1</td><td>1629728587946</td><td class="numi">328</td></tr>
+<tr class="failedodd"><td rowspan="1">Academy.LandingPageVerify</td><td><a href="#m1"><b>verifyAppTitle</b>  </a></td><td class="numi">1</td><td>1690671393774</td><td class="numi">1324</td></tr>
 <tr><th colspan="4">Verifying page title &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">Academy.LandingPageVerify</td><td><a href="#m3"><b>verifyHeader</b>  </a></td><td class="numi">1</td><td>1629728591954</td><td class="numi">1</td></tr>
-<tr><th colspan="4">Verifying Login &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">Academy.HomePage</td><td><a href="#m4"><b>verifyLogin</b>  </a></td><td class="numi">2</td><td>1629728575920</td><td class="numi">25475</td></tr><tr class="passedodd"><td><a href="#m5"><b>verifyLogin</b>  </a></td><td class="numi">2</td><td>1629728575920</td><td class="numi">25475</td></tr>
+<tr class="passedodd"><td rowspan="1">Academy.LandingPageVerify</td><td><a href="#m2"><b>verifyHeader</b>  </a></td><td class="numi">1</td><td>1690671395280</td><td class="numi">3</td></tr>
 </table>
 <h1>App Test</h1>
-<h1>Verifying navbar links display</h1>
-<h2 id="m1">Academy.VerifyNavBar:verifyNavBarDisplay</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
 <h1>Verifying page title</h1>
-<h2 id="m2">Academy.LandingPageVerify:verifyAppTitle</h2>
+<h2 id="m1">Academy.LandingPageVerify:verifyAppTitle</h2>
 <div style="padding-left:3em">
-<p>expected [FEATURED23 COURSES] but found [FEATURED COURSES]</p>
-org.testng.Assert.fail(Assert.java:94)
-<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
-<br/>at org.testng.Assert.assertEquals(Assert.java:123)
-<br/>at org.testng.Assert.assertEquals(Assert.java:176)
-<br/>at org.testng.Assert.assertEquals(Assert.java:186)
-<br/>at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:26)
+<p>element click intercepted: Element &lt;a href=&quot;https://www.udemy.com/user/testing-minds/&quot; class=&quot;main-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (1142, 124). Other element would receive the click: &lt;div class=&quot;preloader&quot;&gt;...&lt;/div&gt;
+  (Session info: headless chrome=114.0.5735.248)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-3MLRAML&apos;, ip: &apos;10.0.0.138&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3d59f7a118c11191f6226fe6721b0e8d</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:32)
 <br/>21 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">Academy.LandingPageVerify:verifyHeader</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Verifying Login</h1>
-<h2 id="m4">Academy.HomePage:verifyLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
-<tr class="param stripe"><td>res@qw.com</td>
-<td>1234!</td>
-<td>restricted</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">Academy.HomePage:verifyLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
-<tr class="param stripe"><td>nonres@qw.com</td>
-<td>1233!</td>
-<td>non restricted</td>
-</tr>
-</table>
+<h2 id="m2">Academy.LandingPageVerify:verifyHeader</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
