@@ -66,7 +66,7 @@ public class base {
 		 
 		    	options.addArguments("--no-sandbox");
 				options.addArguments("--headless");
-				options.addArguments("--crash-dumps-dir=/tmp")
+				options.addArguments("--crash-dumps-dir=/tmp");
 				options.addArguments("--disable-gpu");
 			
 				options.addArguments("--allow-insecure-localhost");
