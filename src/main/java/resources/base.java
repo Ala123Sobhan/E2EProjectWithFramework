@@ -54,17 +54,17 @@ public class base {
 //			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\driver\\IEDriverServer.exe");
 //			driver = new InternetExplorerDriver();
 //		}
-		
-		if (browserName.contains("chrome")) {
-			WebDriverManager.chromedriver().setup();
+		if(browserName.contains("chromeheadless"))
+		{
+			
+			WebDriverManager.chromedriver().driverVersion("114.0.5735.90").setup();
+
 			System.setProperty("webdriver.chrome.silentOutput", "true");
-		   ChromeOptions options = new ChromeOptions();
-		   options.setPageLoadStrategy(PageLoadStrategy.EAGER);
-			// options.addArguments("--incognito");
-			// driver = new ChromeDriver(options);
+		    ChromeOptions options = new ChromeOptions();
+		    options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+			
 		 
-			if (browserName.contains("headless")) {
-				//ChromeOptions options = new ChromeOptions();
+			
 				options.addArguments("--headless");
 				options.addArguments("--disable-gpu");
 				options.addArguments("--no-sandbox");
@@ -72,10 +72,36 @@ public class base {
 				options.addArguments("--disable-extensions");
 				options.addArguments("--disable-dev-shm-usage");
 				options.addArguments("--window-size=1400,800");
-				driver = new ChromeDriver(options);
-			} else {
+			
 				driver = new ChromeDriver(options);
 			}
+
+			
+		
+//		else if (browserName.contains("chrome")) {
+//			//WebDriverManager.chromedriver().setup();
+//			WebDriverManager.chromedriver().driverVersion("115.0.5790.110").setup();
+//
+//			System.setProperty("webdriver.chrome.silentOutput", "true");
+//		   ChromeOptions options = new ChromeOptions();
+//		   options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+//			// options.addArguments("--incognito");
+//			// driver = new ChromeDriver(options);
+//		 
+//			if (browserName.contains("headless")) {
+//				//ChromeOptions options = new ChromeOptions();
+//				options.addArguments("--headless");
+//				options.addArguments("--disable-gpu");
+//				options.addArguments("--no-sandbox");
+//				options.addArguments("--allow-insecure-localhost");
+//				options.addArguments("--disable-extensions");
+//				options.addArguments("--disable-dev-shm-usage");
+//				options.addArguments("--window-size=1400,800");
+//			
+//				driver = new ChromeDriver(options);
+//			} else {
+//				driver = new ChromeDriver(options);
+//			}
 
 		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
