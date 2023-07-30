@@ -61,17 +61,19 @@ public class base {
 
 			System.setProperty("webdriver.chrome.silentOutput", "true");
 		    ChromeOptions options = new ChromeOptions();
-		    options.setPageLoadStrategy(PageLoadStrategy.EAGER);
+		    
 			
 		 
-			
+		    	options.addArguments("--no-sandbox");
 				options.addArguments("--headless");
+				options.addArguments("--crash-dumps-dir=/tmp")
 				options.addArguments("--disable-gpu");
-				options.addArguments("--no-sandbox");
+			
 				options.addArguments("--allow-insecure-localhost");
 				options.addArguments("--disable-extensions");
 				options.addArguments("--disable-dev-shm-usage");
 				options.addArguments("--window-size=1400,800");
+				options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 			
 				driver = new ChromeDriver(options);
 			}
