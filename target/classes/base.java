@@ -57,7 +57,7 @@ public class base {
 		if(browserName.contains("chromeheadless"))
 		{
 			
-			WebDriverManager.chromedriver().driverVersion("114.0.5735.90").setup();
+			WebDriverManager.chromedriver().setup();
 
 			System.setProperty("webdriver.chrome.silentOutput", "true");
 		    ChromeOptions options = new ChromeOptions();
