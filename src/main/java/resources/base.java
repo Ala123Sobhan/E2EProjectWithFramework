@@ -31,7 +31,7 @@ public class base {
 
 		prop = new Properties();
 		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\main\\java\\resources\\data.properties");
+				System.getProperty("user.dir") + "/src/main/java/resources/data.properties");
 		prop.load(fis);
 		// System.out.println(prop.getProperty("browser"));
 
