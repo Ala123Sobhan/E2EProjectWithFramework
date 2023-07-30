@@ -106,10 +106,10 @@ public class base {
 		driver.manage().timeouts().implicitlyWait(12, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
-		
-		}
 		return driver;
 	}
+	
+	
 
 	public String [] getScreenshot(String testcaseName, WebDriver driver) throws IOException {
 		String [] paths = new String[2];

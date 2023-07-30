@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="5692" started-at="2023-07-29T22:56:29Z" finished-at="2023-07-29T22:56:35Z">
+  <suite name="Suite" duration-ms="10274" started-at="2023-07-30T17:02:12Z" finished-at="2023-07-30T17:02:22Z">
     <groups>
     </groups>
-    <test name="App Test" duration-ms="5" started-at="2023-07-29T22:56:29Z" finished-at="2023-07-29T22:56:29Z">
+    <test name="App Test" duration-ms="6" started-at="2023-07-30T17:02:12Z" finished-at="2023-07-30T17:02:12Z">
     </test> <!-- App Test -->
-    <test name="Verifying page title" duration-ms="5692" started-at="2023-07-29T22:56:29Z" finished-at="2023-07-29T22:56:35Z">
+    <test name="Verifying page title" duration-ms="10274" started-at="2023-07-30T17:02:12Z" finished-at="2023-07-30T17:02:22Z">
       <class name="Academy.LandingPageVerify">
-        <test-method status="PASS" signature="initilizeDriver1()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="initilizeDriver1" is-config="true" duration-ms="4127" started-at="2023-07-29T17:56:29Z" finished-at="2023-07-29T17:56:33Z">
+        <test-method status="PASS" signature="initilizeDriver1()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="initilizeDriver1" is-config="true" duration-ms="8091" started-at="2023-07-30T12:02:12Z" finished-at="2023-07-30T12:02:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeDriver1 -->
-        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="verifyAppTitle" duration-ms="1324" started-at="2023-07-29T17:56:33Z" finished-at="2023-07-29T17:56:35Z">
+        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="verifyAppTitle" duration-ms="1731" started-at="2023-07-30T12:02:20Z" finished-at="2023-07-30T12:02:22Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
               <![CDATA[element click intercepted: Element <a href="https://www.udemy.com/user/testing-minds/" class="main-btn">...</a> is not clickable at point (1142, 124). Other element would receive the click: <div class="preloader">...</div>
-  (Session info: headless chrome=114.0.5735.248)
+  (Session info: headless chrome=115.0.5790.110)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-3MLRAML', ip: '10.0.0.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d59f7a118c11191f6226fe6721b0e8d]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8694c3e5741339f3f308c845a1a99b8]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="https://www.udemy.com/user/testing-minds/" class="main-btn">...</a> is not clickable at point (1142, 124). Other element would receive the click: <div class="preloader">...</div>
-  (Session info: headless chrome=114.0.5735.248)
+  (Session info: headless chrome=115.0.5790.110)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-3MLRAML', ip: '10.0.0.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.248, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50326}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d59f7a118c11191f6226fe6721b0e8d
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55615}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8694c3e5741339f3f308c845a1a99b8
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -71,11 +71,11 @@ Session ID: 3d59f7a118c11191f6226fe6721b0e8d
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAppTitle -->
-        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="verifyHeader" duration-ms="3" started-at="2023-07-29T17:56:35Z" finished-at="2023-07-29T17:56:35Z">
+        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="verifyHeader" duration-ms="6" started-at="2023-07-30T12:02:22Z" finished-at="2023-07-30T12:02:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeader -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="tearDown" is-config="true" duration-ms="47" started-at="2023-07-29T17:56:35Z" finished-at="2023-07-29T17:56:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@35cabb2a]" name="tearDown" is-config="true" duration-ms="74" started-at="2023-07-30T12:02:22Z" finished-at="2023-07-30T12:02:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
