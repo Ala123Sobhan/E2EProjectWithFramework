@@ -1,8 +1,10 @@
 package Academy;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,10 +28,15 @@ public class LandingPageVerify extends base {
 	public void verifyAppTitle() throws IOException {
 		
 		LandingPage l = new LandingPage(driver);
-		WebDriverWait wt= new WebDriverWait(driver, 20);
-		wt.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.xpath("//a[normalize-space()='Access all our Courses']"))));
+		 JavascriptExecutor executor = (JavascriptExecutor) driver;
+	    
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+		
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Access all our Courses']")));
 		
 		driver.findElement(By.xpath("//a[normalize-space()='Access all our Courses']")).click();
+		
+		executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//a[normalize-space()='Access all our Courses']")));
 		
 		System.out.println(driver.getCurrentUrl());
 		

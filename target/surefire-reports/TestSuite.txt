@@ -1,15 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 13.962 s <<< FAILURE! - in TestSuite
-Academy.LandingPageVerify.verifyAppTitle  Time elapsed: 1.294 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.009 s <<< FAILURE! - in TestSuite
+Academy.LandingPageVerify.verifyAppTitle  Time elapsed: 1.289 s  <<< FAILURE!
 org.openqa.selenium.ElementClickInterceptedException: 
 element click intercepted: Element <a href="https://www.udemy.com/user/testing-minds/" class="main-btn">...</a> is not clickable at point (1142, 124). Other element would receive the click: <div class="preloader">...</div>
   (Session info: headless chrome=115.0.5790.110)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-3MLRAML', ip: '10.0.0.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Build info: version: '4.9.0', revision: 'd7057100a6'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: eager, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: eb049db7847965ccdd70484eec97dcec
-	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:32)
+Command: [0160d9f01493f6b371f183ac9afbe31a, clickElement {id=16CF6E51E483A7EC97F0740BA5E2AC68_element_26}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51227}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51227/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0160d9f01493f6b371f183ac9afbe31a)] -> xpath: //a[normalize-space()='Access all our Courses']]
+Session ID: 0160d9f01493f6b371f183ac9afbe31a
+	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:37)
 
