@@ -59,7 +59,7 @@ public class base {
 			
 			WebDriverManager.chromedriver().setup();
 
-			System.setProperty("webdriver.chrome.silentOutput", "true");
+			//System.setProperty("webdriver.chrome.silentOutput", "true");
 		    ChromeOptions options = new ChromeOptions();
 		    
 			
