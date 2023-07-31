@@ -1,17 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.542 s <<< FAILURE! - in TestSuite
-Academy.LandingPageVerify.verifyAppTitle  Time elapsed: 1.328 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <a href="https://www.udemy.com/user/testing-minds/" class="main-btn">...</a> is not clickable at point (1142, 124). Other element would receive the click: <div class="preloader">...</div>
-  (Session info: headless chrome=115.0.5790.110)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f6fbcf8f161a7bed6ee2520374a77ff1, clickElement {id=2AA979C2C089E8DA5D1968A946FB8351_element_13}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54492}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54492/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (f6fbcf8f161a7bed6ee2520374a77ff1)] -> xpath: //a[normalize-space()='Access all our Courses']]
-Session ID: f6fbcf8f161a7bed6ee2520374a77ff1
-	at Academy.LandingPageVerify.verifyAppTitle(LandingPageVerify.java:37)
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 2.652 s <<< FAILURE! - in TestSuite
+Academy.LandingPageVerify.initilizeDriver1  Time elapsed: 1.776 s  <<< FAILURE!
+java.lang.NullPointerException
+	at Academy.LandingPageVerify.initilizeDriver1(LandingPageVerify.java:23)
 

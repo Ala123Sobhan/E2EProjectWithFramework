@@ -8,9 +8,9 @@
     <classes>
       <class name="Academy.LandingPageVerify">
         <methods>
+          <include name="verifyHeader"/>
           <include name="initilizeDriver1"/>
           <include name="verifyAppTitle"/>
-          <include name="tearDown"/>
         </methods>
       </class> <!-- Academy.LandingPageVerify -->
     </classes>
