@@ -30,6 +30,7 @@ public class LandingPageVerify extends base {
 		LandingPage l = new LandingPage(driver);
 		 JavascriptExecutor executor = (JavascriptExecutor) driver;
 	    
+		 System.out.println(driver.getCurrentUrl());
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
 		
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Access all our Courses']")));
@@ -38,7 +39,7 @@ public class LandingPageVerify extends base {
 		
 		executor.executeScript("arguments[0].click();", driver.findElement(By.xpath("//a[normalize-space()='Access all our Courses']")));
 		
-		System.out.println(driver.getCurrentUrl());
+		
 		
 	}
 	
