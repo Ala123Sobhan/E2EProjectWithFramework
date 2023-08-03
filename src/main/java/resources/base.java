@@ -57,11 +57,14 @@ public class base {
 		if(browserName.contains("chromeheadless"))
 		{
 			
-			WebDriverManager.chromedriver().setup();
-			System.out.println(WebDriverManager.chromedriver().getDownloadedDriverPath());
-			System.out.println(WebDriverManager.chromedriver().getDownloadedDriverVersion());
+//			WebDriverManager.chromedriver().setup();
+//			System.out.println(WebDriverManager.chromedriver().getDownloadedDriverPath());
+//			System.out.println(WebDriverManager.chromedriver().getDownloadedDriverVersion());
 			
 			//System.setProperty("webdriver.chrome.silentOutput", "true");
+			
+			System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+			
 		    ChromeOptions options = new ChromeOptions();
 		    
 			
