@@ -2,18 +2,18 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="45605" started-at="2023-08-03T00:53:46Z" finished-at="2023-08-03T00:54:31Z">
+  <suite name="Suite" duration-ms="30452" started-at="2023-08-03T01:25:05Z" finished-at="2023-08-03T01:25:36Z">
     <groups>
     </groups>
-    <test name="App Test" duration-ms="7" started-at="2023-08-03T00:53:46Z" finished-at="2023-08-03T00:53:46Z">
+    <test name="App Test" duration-ms="5" started-at="2023-08-03T01:25:05Z" finished-at="2023-08-03T01:25:05Z">
     </test> <!-- App Test -->
-    <test name="Verifying page title" duration-ms="45605" started-at="2023-08-03T00:53:46Z" finished-at="2023-08-03T00:54:31Z">
+    <test name="Verifying page title" duration-ms="30452" started-at="2023-08-03T01:25:05Z" finished-at="2023-08-03T01:25:36Z">
       <class name="Academy.LandingPageVerify">
-        <test-method status="PASS" signature="initilizeDriver1()[pri:0, instance:Academy.LandingPageVerify@65fb9ffc]" name="initilizeDriver1" is-config="true" duration-ms="29793" started-at="2023-08-02T19:53:46Z" finished-at="2023-08-02T19:54:15Z">
+        <test-method status="PASS" signature="initilizeDriver1()[pri:0, instance:Academy.LandingPageVerify@1bb5a082]" name="initilizeDriver1" is-config="true" duration-ms="15664" started-at="2023-08-02T20:25:05Z" finished-at="2023-08-02T20:25:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initilizeDriver1 -->
-        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@65fb9ffc]" name="verifyAppTitle" duration-ms="14431" started-at="2023-08-02T19:54:15Z" finished-at="2023-08-02T19:54:30Z">
+        <test-method status="FAIL" signature="verifyAppTitle()[pri:0, instance:Academy.LandingPageVerify@1bb5a082]" name="verifyAppTitle" duration-ms="14389" started-at="2023-08-02T20:25:21Z" finished-at="2023-08-02T20:25:35Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Access all our Courses']"}
@@ -22,9 +22,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a451bc1bd5d07b80e54895d11bdcaaa, findElement {using=xpath, value=//a[normalize-space()='Access all our Courses']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57946/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6a451bc1bd5d07b80e54895d11bdcaaa]]>
+Command: [7a1008b862665ded9cefe6aaf3d14f4c, findElement {using=xpath, value=//a[normalize-space()='Access all our Courses']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a1008b862665ded9cefe6aaf3d14f4c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Access all our Courses']"}
@@ -33,9 +33,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.11.0', revision: '040bc5406b'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6a451bc1bd5d07b80e54895d11bdcaaa, findElement {using=xpath, value=//a[normalize-space()='Access all our Courses']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57946}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57946/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6a451bc1bd5d07b80e54895d11bdcaaa
+Command: [7a1008b862665ded9cefe6aaf3d14f4c, findElement {using=xpath, value=//a[normalize-space()='Access all our Courses']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ala12\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58950/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a1008b862665ded9cefe6aaf3d14f4c
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -78,11 +78,11 @@ Session ID: 6a451bc1bd5d07b80e54895d11bdcaaa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAppTitle -->
-        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:Academy.LandingPageVerify@65fb9ffc]" name="verifyHeader" duration-ms="5" started-at="2023-08-02T19:54:31Z" finished-at="2023-08-02T19:54:31Z">
+        <test-method status="PASS" signature="verifyHeader()[pri:0, instance:Academy.LandingPageVerify@1bb5a082]" name="verifyHeader" duration-ms="3" started-at="2023-08-02T20:25:36Z" finished-at="2023-08-02T20:25:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeader -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@65fb9ffc]" name="tearDown" is-config="true" duration-ms="93" started-at="2023-08-02T19:54:31Z" finished-at="2023-08-02T19:54:31Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Academy.LandingPageVerify@1bb5a082]" name="tearDown" is-config="true" duration-ms="58" started-at="2023-08-02T20:25:36Z" finished-at="2023-08-02T20:25:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
